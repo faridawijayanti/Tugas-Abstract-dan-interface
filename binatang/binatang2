@@ -1,0 +1,43 @@
+<?php
+abstract class Binatang {
+	protected $Nama;
+	protected $jmlkaki;
+	
+	public function__construct ($Nama,$jmlkaki){
+		$this->nama = $Nama ;
+		$this->jmlkaki = $jmlkaki ;
+	}
+	
+	abstract public function makan (){
+		//kunyah
+	}
+		
+		public function setNama ($Nama){
+		$this->nama = $Nama ;
+	}
+	public function getNama ($Nama){
+		return $this-> $Nama ;
+	}
+	
+	public function setjmlkaki ($jmlkaki){
+		$this->jmlkaki = $jmlkaki ;
+	}
+	public function getjmlkaki ($jmlkaki){
+		return this-> $jmlkaki ;
+	}
+
+	$binatang = new Binatang();
+	$binatang->makan () ;
+	
+}
+class Kucing extends Binatang implements Karnivora{
+	private $suara = string ();
+	private $warna = string ();
+	
+	abstract public function makan ();
+	
+	public function setSuara ($Suara){
+		$this->suara = $Suara ;
+	}
+	public function setWarna ($Warna){
+		$this->warna = $Warna;
